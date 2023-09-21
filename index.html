@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>React</title>
+</head>
+<body>
+<h1>This will remain as it is React wrks only the root here</h1>
+<div id="root"><!--injecting the heading using JS-->
+        <h1>This will Be replaced by react code for H1</h1>
+<!--
+      <script>
+        //how to create h1 in JS
+       const heading = document.createElement("h1");
+       heading.innerHTML="Hello World Using JS";
+       //Put this heading inside root.Search the root
+       //It will give reference to div tag
+       const root=document.getElementById("root");
+       //inside the div tag we need to put heading
+      //append the child is on every html node
+    root.appendChild(heading);//heading will go as child inside root
+      </script>
+
+    </div> //closing of First dev
+-->
+
+<!--Fetching React in Code-->
+<!--Inside this Link JS Code --As it is JS library-->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<!--React Code-->
+<!--
+<script>
+    //Hello world in React
+const heading=React.createElement("h1",{},"hello world Using React");
+//Put this heading in div for that need to create a root in react 
+const root=ReactDOM.createRoot(document.getElementById("root"));
+//render the heading in react
+root.render(heading);
+</script>
+-->
+
+<!--writing the abv code in js file for better practice so inject it-->
+
+<script src='./App.js'></script>
+
+
+
+
+</body>
+</html>
